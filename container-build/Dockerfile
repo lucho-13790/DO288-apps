@@ -1,8 +1,8 @@
 # Use the httpd-parent image as base
 FROM quay.io/redhattraining/httpd-parent
 EXPOSE 8080 
-LABEL io.k8.description="a basic Apache server" \
-	io.k8.display-name="ApacheServer" \
+LABEL io.k8s.description="a basic Apache server" \
+	io.k8s.display-name="ApacheServer" \
 	io.openshift.expose-services="8080:http" \
 	io.openshift.tags="APACHE,httpd"
 
